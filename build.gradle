@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.shengsiyuan'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
