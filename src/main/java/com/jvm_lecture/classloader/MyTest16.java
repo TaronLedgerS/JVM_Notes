@@ -14,7 +14,10 @@ public class MyTest16 extends ClassLoader {
 
     private String path;
 
-
+    //设置为系统类加载器必须提供的构造方法
+    public MyTest16(ClassLoader parent) {
+        super(parent);
+    }
     public MyTest16(String classLoaderName){
         super();//默认该类父加载器为系统类加载器
         this.classLoaderName = classLoaderName;

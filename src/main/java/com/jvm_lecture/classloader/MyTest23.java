@@ -28,6 +28,17 @@ public class MyTest23 {
 
         System.out.println(ClassLoader.class.getClassLoader());
         System.out.println(Launcher.class.getClassLoader());
+        //系统类加载器这个属性值:默认为null，
+        //则表示ClassLoader.getSystemClassLoader()默认为AppClassLoader
         System.out.println(System.getProperty("java.system.class.loader"));
+        /*
+        修改默认的系统类加载器并运行
+        java -Djava.system.class.loader=com.jvm_lecture.classloader.MyTest16 com.jvm_l
+ecture.classloader.MyTest23
+         */
+        System.out.println(MyTest23.class.getClassLoader());
+        System.out.println(MyTest16.class.getClassLoader());
+        System.out.println(ClassLoader.getSystemClassLoader());
+
     }
 }
