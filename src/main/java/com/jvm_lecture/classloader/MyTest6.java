@@ -13,7 +13,7 @@ public class MyTest6 {
 }
 
 class Singleton{
-    public static  int counter1;
+    public static  int counter1=0;
     //声明位置1
 //   public static int   counter2 = 0;
 
